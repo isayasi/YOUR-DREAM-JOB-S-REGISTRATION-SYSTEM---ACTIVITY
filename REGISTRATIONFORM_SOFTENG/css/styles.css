@@ -1,0 +1,76 @@
+body {
+    background-color: #433878; /* Change to your desired background color */
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 950px; /* Increase the maximum width */
+    margin: 0 auto; /* Center the container */
+    background: white;
+    padding: 40px; /* Increase padding for more space */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+}
+
+/* Style for form inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+select {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Space inside the input */
+    margin: 10px 0; /* Space above and below */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Adjust button styling */
+input[type="submit"] {
+    background-color: #7E60BF; /* Button color */
+    color: white; /* Text color */
+    padding: 10px; /* Space inside the button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Merge table borders */
+    margin-top: 20px; /* Space above the table */
+    table-layout: fixed; /* Fixed layout for consistent column widths */
+}
+
+th, td {
+    padding: 10px; /* Space inside cells */
+    text-align: center; /* Center align the text */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Show ellipsis for overflow */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+th {
+    background-color: #7E60BF; /* Header background color */
+    color: white; /* Header text color */
+    font-size: 1em; /* Adjust font size as needed */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Optional: zebra striping for rows */
+}
+
+/* Optional: responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Full width on small screens */
+    }
+}
